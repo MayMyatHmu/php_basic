@@ -8,16 +8,14 @@
 </head>
 <body>
     <?php
-    class Fruit { 
-        final public function intro() { 
+    class Goodbye {
+        const LEAVING_MESSAGE = "Thank you for visiting W3School.com!";
+        public function byebye() { 
+            echo self::LEAVING_MESSAGE;
         }
     }
-    class Strawberry extends Fruit { 
-        // will result in error
-        public function intro() { 
-            
-        }
-    }
+    $goodbye = new Goodbye();
+    $goodbye->byebye();
     ?>
 </body>
 </html>

@@ -8,16 +8,17 @@
 </head>
 <body>
     <?php
-    class Fruit { 
-        final public function intro() { 
+    interface Animal { 
+        public function makeSound();
+    }
+    class Cat implements Animal { 
+        public function makeSound() { 
+            echo "Meow";
         }
     }
-    class Strawberry extends Fruit { 
-        // will result in error
-        public function intro() { 
-            
-        }
-    }
+
+    $animal = new Cat();
+    $animal->makeSound();
     ?>
 </body>
 </html>
