@@ -6,13 +6,15 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
 </head>
+<title>Writing PHP Function with Parmenters</title>
 <body>
- <?php
- $array = array( 1, 2, 3, 4, 5);
-
- foreach ( $array as $value ) { 
-  echo "Value is $value <br/>";
+ <?php 
+ function addFunction($num1, $num2) { 
+  $sum = $num1 + $num2;
+  echo "Sum of the two numbers is : $sum";
  }
+
+ addFunction(10, 20);
  ?>
 </body>
 </html>

@@ -7,12 +7,11 @@
  <title>Document</title>
 </head>
 <body>
- <?php
- $array = array( 1, 2, 3, 4, 5);
+ <?php 
+ $string1="Hello World";
+ $string2="1234";
 
- foreach ( $array as $value ) { 
-  echo "Value is $value <br/>";
- }
+ echo $string1 . " " . $string2;
  ?>
 </body>
 </html>

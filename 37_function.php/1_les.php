@@ -6,13 +6,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
 </head>
+<title>Writing PHP Function</title>
 <body>
- <?php
- $array = array( 1, 2, 3, 4, 5);
+ 
+<?php 
+/* Defining a PHP Function */
+function writeMessage() { 
+ echo "You are really a nice person, Have a nice time!";
+}
 
- foreach ( $array as $value ) { 
-  echo "Value is $value <br/>";
- }
- ?>
+/* Calling a PHP Function */ 
+WriteMessage();
+?>
 </body>
 </html>

@@ -7,12 +7,16 @@
  <title>Document</title>
 </head>
 <body>
- <?php
- $array = array( 1, 2, 3, 4, 5);
+ <?php 
+ $variable = "name";
+ $literally = 'My $variable will not print!\\n';
 
- foreach ( $array as $value ) { 
-  echo "Value is $value <br/>";
- }
+  print($literally);
+ print "<br/>";
+
+ $literally = "My $variable will print!\\n";
+
+ print($literally);
  ?>
 </body>
 </html>

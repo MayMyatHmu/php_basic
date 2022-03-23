@@ -7,12 +7,14 @@
  <title>Document</title>
 </head>
 <body>
- <?php
- $array = array( 1, 2, 3, 4, 5);
+ <?Php
+ $i = 0;
 
- foreach ( $array as $value ) { 
-  echo "Value is $value <br/>";
+ while( $i < 10) { 
+  $i++;
+  if ( $i == 3) break;
  }
+ echo ("Loop stoped at i = $i");
  ?>
 </body>
 </html>
